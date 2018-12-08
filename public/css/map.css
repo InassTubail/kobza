@@ -1,0 +1,47 @@
+
+/* Map Style */
+  .mainmap{
+    width: 70%;
+    height: 600px;
+    margin-left: 15%;
+    margin-top: 20px ;
+  /*border: 3px solid #73AD21;*/
+
+}
+
+
+
+.mainmap #map {
+ height:  400px ;
+width:  100% ;
+margin-left: 0;
+padding-bottom: 20px;
+
+}
+ .mainmap #h5  {
+    font-weight: bold;
+    text-shadow: 3px 2px #f96f0d;
+     font-family: Arial, Helvetica, sans-serif;
+     font-style: italic;
+     font-size: 19px;
+     padding-left: 55px;
+  padding-bottom: 40px;
+     padding-top: 48px;
+     font-weight: bold;
+     margin-left: 10px
+}
+.mainmap #h6{
+   font-weight: bold;
+   /*text-shadow: 3px 2px #f96f0d;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 19px;
+    padding-left: 55px;
+ padding-bottom: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-left: 10px
+}
+
+
+       /* Enf Map Style */

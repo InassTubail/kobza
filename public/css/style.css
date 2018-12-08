@@ -1,0 +1,208 @@
+* {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+			font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+
+	}
+	body {
+		background-image: url(http://www.whiteowldj.com/wp-content/uploads/2014/07/background-gradient1.jpg);
+	}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+#js-header{
+	overflow: hidden;
+}
+#js-header .icons{
+	float: right;
+	padding: 2px;
+	margin-top: 4px;
+}
+#js-header .icons i{
+	padding-right: 7px;
+	/*cursor: pointer;*/
+	color: black;
+	}
+
+#js-header .logo{
+	float: left;
+}
+.line {
+left: 39%;
+position: absolute;
+top: 57px;
+}
+.products{
+	padding-bottom: 80px ;
+}
+.products img{
+	border-radius: 2%;
+}
+main{
+	overflow: hidden;
+}
+main .main{
+	text-align: center;
+	padding-top: 60px
+}
+.product{
+	margin: 40px 0 20px 0;
+	width: 32%;
+	float: left;
+}
+
+
+.product .order .submit{
+  width: 42%;
+	height : 35px;
+	border: none;
+	background-color: gold;
+	padding: 3px;
+	color: green;
+	font-weight: 800;
+	border-style: solid;
+	float: right;
+	margin-right: 17px;
+	margin-top: 15px;
+}
+.product .order .number{
+width: 110px;
+height: 50px;
+float: left;
+margin-top: 25px;
+margin-left: 45px;
+}
+.continer {
+  position: relative;
+  width: 95%;
+}
+
+.image {
+
+  width: 100%;
+	border-radius: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+	border-radius: 40%;
+  background-color: rgba(255,108,0,0.5);
+}
+
+.continer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.order{
+	padding-top: 10px;
+	overflow: hidden;
+}
+/* ***************************Animation********************************** */
+
+.icon-anim {
+    -ms-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+
+    -ms-animation-name: icon-anim;
+    -o-animation-name: icon-anim;
+    -moz-animation-name: icon-anim;
+    -webkit-animation-name: icon-anim;
+    animation-name: icon-anim;
+
+    -ms-animation-duration: 0.2s;
+    -o-animation-duration: 0.2s;
+    -moz-animation-duration: 0.2s;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+
+    -ms-animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+    animation-iteration-count: 3;
+}
+
+@-ms-keyframes icon-anim {
+  0% {-ms-transform: rotate(3deg); }
+  50% {-ms-transform: rotate(-3deg); }
+}
+@-o-keyframes icon-anim {
+  0% {-o-transform: rotate(3deg); }
+  50% {-o-transform: rotate(-3deg); }
+}
+@-moz-keyframes icon-anim {
+  0% {-moz-transform: rotate(3deg); }
+  50% {-moz-transform: rotate(-3deg); }
+}
+@-webkit-keyframes icon-anim {
+  0% {-webkit-transform: rotate(3deg); }
+  50% {-webkit-transform: rotate(-3deg); }
+}
+@keyframes icon-anim {
+  0% {transform: rotate(3deg); }
+  50% {transform: rotate(-3deg); }
+}
+/* ***************************Animation********************************** */
+.overlay2 {
+	position: absolute;
+  top: 38px;
+  bottom: -2px;
+  left: 540px;
+  right: 49px;
+  width: 38%;
+  opacity: 41px;
+  z-index: 9999;
+  border-radius: 2%;
+  background-color: grey;
+}
+
+.APanel {
+	float:right; font-family: Arial; color:red; margin-right: 20px; margin-top: 12px;
+}
+
+.punch {
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+  margin-bottom: 10px;
+	margin-left: 45px;
+	margin-top: 3px;
+  padding: 10px 0 12px 0;
+  text-align: center;
+  text-shadow: 0 -1px 1px #1e2d4d;
+  width: 150px;
+  -webkit-background-clip: padding-box; }
+  .punch:hover {
+    -webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+    box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+    cursor: pointer; }
+  .punch:active {
+    -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+    box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+     }
