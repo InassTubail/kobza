@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Khobza is a web app that is meant to help GSG staff and visitors order sandwiches from the cafeteria of GSS during the lunchtime. The main focus of the app is to eliminate distraction resulting from leaving one's desk to get a sandwich. With our app, the users will save time and effort.",
   "main": "app.js",
+  "engines": {
+    "node": "10.14.1",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "test": "npm run create-tables && node tests/runner.js",
     "start": "node ./src/index.js",
