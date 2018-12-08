@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Panel - Orders</title>
+  <link rel="stylesheet" href="./css/admin_panel_suggestions.css">
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+
+
+</head>
+<div class="wrap">
+  		<a href="/users" class="button anc" style = "float: right; margin-right: 4rem;">Users ➡</a>
+      <a href="/user-orders" class="button anc" style = "float: left; margin-left: 4rem;">⬅ Orders</a>
+</div>
+  <body>
+    <div class="table-title">
+      <h3>Admin Panel</h3>
+      <h3>Khobza Suggestions</h3>
+    </div>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-left">User</th>
+          <th class="text-left">Suggestion</th>
+
+        </tr>
+      </thead>
+      {{#each data}}
+      <tbody class="table-hover">
+        <tr>
+          <td class="text-left">{{name}}</td>
+          <td class="text-left">{{suggestion}}</td>
+        </tr>
+
+      </tbody>
+      {{/each}}
+    </table>
+
+    <a href="/logout" class="button anc" style = "float: right; position: absolute; left: 85%;">Logout</a>
+    <a href="/" class="button anc" style = "float:left;margin-left: 4rem;">The Store</a>
+  </body>
+
+
+</html>

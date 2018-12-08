@@ -1,0 +1,50 @@
+<div class="de">
+  <form class="card" action="/cart" method="post">
+{{#if massg}}
+<p>Thank you, you will receive the notification when sandwish done</p>
+{{/if}}
+  <table >
+<tr id="th1">
+  <th>Time</th>
+  <th>Sandwish name</th>
+  <th>amount</th>
+  <th>Note</th>
+  <th>price</th>
+  <th>Order</th>
+</tr>
+{{#each data}}
+{{#if done}}
+{{else}}
+<tr>
+  <td>{{data_time}}</td>
+  <td>{{name}}</td>
+  <td>{{amount}}</td>
+  <td>	<ul id="growing-search-freebie">
+  <li>
+    <div class="growing-search">
+      <div class="input">
+        <input type="text" placeholder="ex : extra cheese" name="note"/>
+      </div>
+    </div>
+
+  </li>
+</ul>
+</td>
+    <input type="hidden" name="id_order" value="{{id}}">
+    <td>{{price}}</td>
+     <td><button id="delete-btn" type="button" name="button" onclick="batata({{id}})">Delete</button></td>
+</tr>
+{{/if}}
+{{/each}}
+<tr>
+  <td>Total price</td>
+  <td  style="display:none"></td>
+  <td>{{totalprice}} NIS</td>
+  <td  style="display:none"></td>
+  <td style="display:none"></td>
+</tr>
+</table>
+ <input id="confirm" type="submit" name="confirm" value="confirm">
+  </form>
+
+</div>

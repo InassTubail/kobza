@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Panel - Users</title>
+  <link rel="stylesheet" href="/css/admin_panel_users.css">
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+
+
+</head>
+<div class="wrap">
+  		<a href="/user-orders" class="button anc" style = "float: right; margin-right: 4rem;">Orders ➡</a>
+      <a href="/user-suggestions" class="button anc" style = "float: left; margin-left: 4rem;">⬅ Suggestions</a>
+</div>
+  <body>
+    <div class="table-title">
+      <h3>Admin Panel</h3>
+      <h3>Khobza Users</h3>
+    </div>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-left">Name</th>
+          <th class="text-left">Phone Number</th>
+          <th class="text-left">Order Count</th>
+          <th class="text-left">Money Paid</th>
+
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        {{#each users}}
+        <tr>
+          <td class="text-left">{{user}}</td>
+          <td class="text-left">{{phone_number}}</td>
+          <td class="text-left">{{totalOrders}}</td>
+          <td class="text-left">{{totalSpent}}</td>
+       </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+    <a href="/logout" class="button anc" style = "float: right; position: absolute; left: 85%;">Logout</a>
+    <a href="/" class="button anc" style = "float:left;margin-left: 4rem;">The Store</a>
+  </body>
+
+
+</html>

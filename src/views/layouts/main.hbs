@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{>head}}
+  <body>
+    {{>header}}
+    <main>
+      {{{body}}}
+    </main>
+    <script type="text/javascript" src='/js/index.js'></script>
+    <script type = "text/javascript" src="https://www.w3schools.com/lib/w3.js"></script>
+    <script async defer src = "https://maps.googleapis.com/maps/api/js?key= AIzaSyAMzdTjsxevUVptDNz1qkpQWdB9g0KWxP4&callback=initMap">
+    </script>
+    <script type="text/javascript">
+    function getNotification(){
+      const text = document.getElementById('notification-container');
+      var xhr = new XMLHttpRequest();
+
+      xhr.onreadystatechange = function(){
+        if(xhr.status == 200 && xhr.readyState == 4){
+          const notifications = JSON.parse(xhr.responseText);
+
+          const notesHtml = notifications.reduce((notesDivNode, item) => {
+            const notePNode = document.createElement('p')
+            notePNode.textContent = item.notes
+            notesDivNode.appendChild(notePNode)
+            return notesDivNode
+          }, document.createElement('div'))
+
+          notesHtml.setAttribute('id', 'notification-container')
+          text.parentElement.replaceChild(notesHtml, text);
+       }
+      }
+      xhr.open("GET", '/user_notification' ,true);
+      xhr.send();
+    }
+    </script>
+  </body>
+</html>

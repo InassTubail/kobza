@@ -1,0 +1,43 @@
+<div class="products">
+      <div class="main">
+        <h2>Our Products</h2>
+      </div>
+
+
+      <div class="container">
+        {{#if err}}
+        <p>{{mssg}}</p>
+        {{/if}}
+        {{#each products}}
+        <div class="product">
+          <div class="continer">
+            <img src={{url}} class="image">
+            <div class="overlay">
+              <h3 class="text">{{name}}</h3>
+              <p class="text">{{description}}</p>
+              <p class="text">{{price}} <span>S</span></p>
+
+            </div>
+          </div>
+          <form class="order" method="post"  action="/">
+            <input type="hidden" name="idproduct" value={{id}}>
+            <select name = "quantity" placeholder="amount" class = "number">
+                <option value=1>1 Sandwich</option>
+                <option value=2>2 Sandwiches</option>
+                <option value=3>3 Sandwiches</option>
+                <option value=4>4 Sandwiches</option>
+                <option value=5>5 Sandwiches</option>
+                <option value=6>6 Sandwiches</option>
+                <option value=7>7 Sandwiches</option>
+                <option value=8>8 Sandwiches</option>
+                <option value=9>9 Sandwiches</option>
+                <option value=10>10 Sandwiches</option>
+            </select><br>
+            <button type="submit" class="punch" id="submit">Order</button>
+          </form>
+        </div>
+             {{/each}}
+        </div>
+
+
+    </div>

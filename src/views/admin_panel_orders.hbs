@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Admin Panel - Orders</title>
+  <link rel="stylesheet" href="./css/admin_panel_orders.css">
+  <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+
+
+</head>
+<div class="wrap">
+  		<a href="/users" class="button anc" style = "float: right; margin-right: 4rem;">Users ➡</a>
+      <a href="/user-suggestions" class="button anc" style = "float: left; margin-left: 4rem;">⬅ Suggestions</a>
+</div>
+  <body>
+    <div class="table-title">
+      <h3>Admin Panel</h3>
+      <h3>Khobza Orders</h3>
+    </div>
+    <table class="table-fill">
+      <thead>
+        <tr>
+          <th class="text-left">User ordering</th>
+          <th class="text-left">Sandwich/es</th>
+          <th class="text-left">Quantity</th>
+          <th class="text-left">Notes</th>
+          <th class="text-left">Time Order</th>
+          <th class="text-left">Admin Notes</th>
+          <th class="text-left">Done</th>
+        </tr>
+      </thead>
+      <tbody class="table-hover">
+        {{#each result}}
+        <form class="" action="/notification" method="post">
+          <tr>
+            <td class="text-left">{{user}}</td>
+            <td class="text-left">{{sandwish}}</td>
+            <td class="text-left">{{amount}}</td>
+            <td class="text-left">{{notes}}</td>
+            <td class="text-left">{{data_time}}</td>
+            <td class="text-left"><input type="text" name="admin_notes" value=""></td>
+            <input type="hidden" name="user_id" value="{{user_id}}">
+            <input type="hidden" name="sandwish" value="{{sandwish}}">
+            <td class="text-left ready"><input type="submit" name="" value="Ready?"></td>
+          </tr>
+        </form>
+        {{/each}}
+      </tbody>
+    </table>
+
+<a href="/logout" class="button anc" style = "float: right; position: absolute; left: 85%;">Logout</a>
+<a href="/" class="button anc" style = "float:left;margin-left: 4rem;">The Store</a>
+  </body>
+
+
+</html>
