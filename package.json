@@ -1,5 +1,5 @@
 {
-  "name": "khobza",
+  "name": "kobza",
   "version": "1.0.0",
     "engines": {
     "node": "9.6.1"
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/facg3/Khobza.git"
+    "url": "git+https://github.com/InassTubail/kobza.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/facg3/Khobza/issues"
+    "url": "https://github.com/InassTubail/kobza/issues"
   },
-  "homepage": "https://github.com/facg3/Khobza#readme",
+  "homepage": "https://github.com/InassTubail/kobza#readme",
   "dependencies": {
     "bcrypt": "^1.0.3",
     "bcryptjs": "^2.4.3",
