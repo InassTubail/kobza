@@ -1,0 +1,81 @@
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+#js-header{
+    overflow: hidden;
+}
+#js-header .icons{
+    float: right;
+    padding: 2px;
+}
+#js-header .icons i{
+    padding-right: 7px;
+    cursor: pointer;
+    }
+    /*#js-header .icons .fa:focus {
+        color: #ff6c00;
+    }*/
+#js-header .logo{
+    /*float: left;*/
+}
+.line {
+left: 39%;
+position: absolute;
+top: 57px;
+}
+main{
+    overflow: hidden;
+}
+body{
+  background-color: grey
+}
+.product{
+    margin: 80px 0 0 0;
+    width: 32%;
+    float: left;
+}
+.product img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.text {
+width:170px;
+height:170px;
+align-self: center;
+font-style: italic;
+font-size: 20px;
+margin-left: 70px;
+
+
+}
+
+.image {
+  float : right;
+  height: 100%;
+   width: 80%;
+  opacity: 0.8;
+
+
+}
+.aboutus{
+  text-align: center;
+
+}
+.container{
+  align-content: left;
+  margin-left: 0px;
+
+}
+
+.whoarewe{
+  text-align : center;
+}
+
+.eliminate{
+  font-style: italic;
+  font-size: 20px;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "khobza",
+  "version": "1.0.0",
+  "description": "Khobza is a web app that is meant to help GSG staff and visitors order sandwiches from the cafeteria of GSS during the lunchtime. The main focus of the app is to eliminate distraction resulting from leaving one's desk to get a sandwich. With our app, the users will save time and effort.",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run create-tables && node tests/runner.js",
+    "start": "node ./src/index.js",
+    "start:watch": "nodemon ./src/index.js",
+    "database": "node ./src/model/databse/build.js",
+
+    "create-tables":"psql -c '\\i src/model/databse/build.sql; '"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facg3/Khobza.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facg3/Khobza/issues"
+  },
+  "homepage": "https://github.com/facg3/Khobza#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "env2": "^2.1.1",
+    "exphbs": "^1.1.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "jsonwebtoken": "^8.1.0",
+    "material-design-icons": "^3.0.1",
+    "pg": "^6.1.2",
+    "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslinter": "^3.2.1",
+    "nodemon": "^1.14.11",
+    "supertest": "^3.0.0",
+    "tape": "^4.8.0"
+  }
+}
