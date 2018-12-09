@@ -16,7 +16,7 @@ app.engine('hbs',exphbs({
   partialsDir:path.join(__dirname,'views','partials'),
   defaultLayout:'main'
 }));
+app.set('port', process.env.PORT || 3000);
 app.use(cookieParser());
 app.use(controllers);
-app.set('port', process.env.PORT || 3000);
 module.exports = app;
